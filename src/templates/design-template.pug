@@ -1,8 +1,72 @@
-include mixins/text
-
+doctype html
 html
   head
+    meta(charset="utf-8")
+    title Rademade test
     link(rel="stylesheet" type="text/css" href="./css/manifest.css")
+    link(rel="shortcut icon" href='/img/favicon.ico')
 
   body
-    p Основной файл для верстки макета
+    .b-wrapper
+      .b-topbar
+        ul.c-breadcrumb
+          li.c-breadcrumb__item
+            a(href='#!') Customers
+          li.c-breadcrumb__item
+            span Max Jones
+
+        .b-topbar__right
+          form.c-search
+            input(type='search', placeholder='Search').c-search__input
+            button(type='submit').c-search__btn
+              i.ic-search
+
+          .c-notification
+            i.c-notification__icon.ic-bell
+            sup.c-notification__num 4
+
+          a(href='#!').c-account
+            span.c-account__logo
+              img(src='../img/del/user_logo.png')
+            strong.c-account__name Hello Lauren
+
+      aside.b-aside
+        a(href='/').b-aside__logo CRM
+        ul.b-nav
+          li.b-nav__item
+            a(href='#!').b-nav__link
+              i.ic-gauge
+              | Dashboard
+          li.b-nav__item
+            a(href='#!').b-nav__link
+              i.ic-chart
+              | Reports
+          li.b-nav__item
+            a(href='#!').b-nav__link.is-active
+              i.ic-briefcase
+              | Customers
+          li.b-nav__item
+            a(href='#!').b-nav__link
+              i.ic-calendar
+              | Calendar
+
+      .b-content
+        .b-customer
+          .b-customer__logo
+            img(src='../img/del/customer_logo.png')
+          h3.b-customer__name.b-customer__name--gold Max Jones
+          p.b-customer__dept Sales & Marketing
+          .b-customer__info
+            p
+              strong phone
+              a(href='tel:+31140175468') (+31) 140 175 468
+            p
+              strong Address
+              span Binnenweg 50, Rotterdam
+            button.e-btn create quote
+
+        .c-tab
+          ul.c-tab__list
+            li.c-tab__item.is-active Overview
+            li.c-tab__item Orders
+            li.c-tab__item Payments

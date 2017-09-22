@@ -1,0 +1,68 @@
+.b-customer
+  position: relative
+  padding-left: 130px
+  &__logo
+    position: absolute
+    left: 0
+    top: 0
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    overflow: hidden
+    img
+      max-width: 100%
+      height: auto
+  &__name
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+    &--gold
+      &:after
+        content: 'gold'
+        padding: 0 8px
+        margin-left: 18px
+        line-height: 18px
+        background: $yellow
+        border-radius: 3px
+        font-size: 11px
+        color: #fff
+        @extend %vertical-t
+  &__dept
+    color: $gray
+    margin-top: 10px
+    font-size: 15px
+    font-weight: bold
+  &__info
+    display: table
+    width: 100%
+    margin-top: 15px
+    padding: 32px 215px 0 0
+    margin-right: -35px
+    border-top: 2px solid #f1f1f1
+    p
+      display: table-cell
+      width: 280px
+    strong
+      display: block
+      margin-bottom: 10px
+      font-size: 12px
+      font-weight: bold
+      text-transform: uppercase
+      color: $gray
+    a,span
+      font-size: 15px
+      font-weight: bold
+      color: $purle
+    a
+      border-bottom: 1px dashed transparent
+      @extend %transition
+      &:hover
+        border-bottom-color: inherit
+    button
+      position: absolute
+      right: 35px
+  @media #{$desktop}
+    &__info
+      p
+        width: auto
+

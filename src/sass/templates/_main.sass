@@ -1,0 +1,19 @@
+@import "aside/main"
+@import "content/main"
+@import "topbar/main"
+
+body
+  background: #ededed
+  font-family: $f-base
+  font-size: 14px
+  font-weight: normal
+  color: $black
+
+.b-wrapper
+  position: relative
+  //max-width: 1415px
+  min-width: 1100px
+  margin: 0 auto
+  padding-left: 320px
+  @media #{$desktop}
+    padding-left: 250px

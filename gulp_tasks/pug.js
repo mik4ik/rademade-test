@@ -1,10 +1,10 @@
 //import plugins
 import {src, dest, gulp} from 'gulp';
 import pug from 'gulp-pug';
-import gulpIf from 'gulp-if';
+// import gulpIf from 'gulp-if';
 import notify from 'gulp-notify';
 
-const emitty = require('emitty').setup('src/templates', 'pug');
+// const emitty = require('emitty').setup('src/templates', 'pug');
 const bs = require('browser-sync').create();
 
 //import variables
@@ -13,7 +13,7 @@ import { dirs } from './util/paths';
 export const buildPug = () => {
 
   return src(dirs.src + "/templates/*.pug")
-      .pipe(gulpIf(global.watch, emitty.stream()))
+      // .pipe(gulpIf(global.watch, emitty.stream()))
 
       .pipe(pug())
 

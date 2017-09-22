@@ -1,0 +1,27 @@
+.c-tab
+  padding-top: 70px
+  border-bottom: 1px solid #fdfdfd
+  &__item
+    position: relative
+    display: inline-block
+    padding: 0 16px
+    line-height: 58px
+    text-transform: uppercase
+    font-weight: bold
+    cursor: pointer
+    &:not(:last-child)
+      margin-right: 24px
+    &:after
+      content: ''
+      position: absolute
+      width: 0
+      height: 6px
+      bottom: -2px
+      left: 50%
+      border-radius: 3px
+      background: $purle
+      transform: translateX(-50%)
+      @extend %transition
+    &.is-active,&:hover
+      &:after
+        width: 100%

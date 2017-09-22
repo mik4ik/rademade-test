@@ -1,0 +1,18 @@
+.c-breadcrumb
+  height: 38px
+  line-height: 38px
+  @extend %float-l
+  &__item
+    display: inline-block
+    font-weight: bold
+    font-size: 16px
+    &:not(:last-of-type):after
+      content: '\e800'
+      margin: 0 17px 0 25px
+      font-family: $f-fontello
+      font-weight: normal
+      font-size: 15px
+    a
+      @extend %link-hover
+    span
+      color: $purle

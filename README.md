@@ -1,12 +1,19 @@
-# Rademade Test Skeleton
+## How to run
 
-##### 1. Install node.js and npm
+##### 1. Clone or download project.
+
+##### 2. Install node.js and npm
 [https://www.npmjs.com/get-npm](https://www.npmjs.com/get-npm)
 
-##### 2. Go to project root and install node_modules
-```npm install --save-dev``` or ```npm i -D```
+##### 3. Go to project root and install node_modules
+```npm install```
 
-##### 3. Run server
-```npm run start```
+##### 4. Run project 
+Run ``` gulp ``` for development version
 
-#####  I hope you enjoy it ! :)
+Run ``` gulp build ``` for build version
+
+
+## Look at the hosting
+
+[http://rademade.mik4ik.pro/](http://rademade.mik4ik.pro/)

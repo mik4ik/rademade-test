@@ -1,0 +1,26 @@
+.c-notification
+  margin-right: 34px
+  cursor: pointer
+  @extend %vertical-m
+  &__icon
+    font-size: 20px
+    color: #dedede
+  &__num
+    min-width: 16px
+    height: 16px
+    padding: 0 4px
+    margin: -4px 0 0 -6px
+    line-height: 16px
+    background: $pink
+    border-radius: 30px
+    font-size: 12px
+    font-weight: bold
+    text-align: center
+    color: #fff
+    box-shadow: 0 0 0 0 rgba(241,78,149,.7)
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1)
+    @extend %vertical-t
+    @extend %transition
+    @keyframes pulse
+      to
+        box-shadow: 0 0 0 10px rgba(241,78,149,0)

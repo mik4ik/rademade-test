@@ -1,0 +1,35 @@
+.b-nav
+  padding-top: 45px
+  &__item
+    margin: 0 20px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      bottom: 0
+      left: 0
+      border-bottom: 1px solid #3d444d
+  &__link
+    display: block
+    position: relative
+    height: 60px
+    line-height: 60px
+    padding: 0 22px
+    margin: 0 -20px
+    color: #fff
+    border-left: 5px solid transparent
+    font-size: 17px
+    font-weight: 300
+    z-index: 1
+    @extend %transition
+    &:hover:not(.is-active)
+      border-left-color: rgba(0,0,0, .4)
+      background: rgba(0,0,0, .2)
+    &.is-active
+      background: #442a9d
+      border-left-color: $yellow
+      cursor: default
+    i
+      margin-right: 20px
+      font-size: 22px
